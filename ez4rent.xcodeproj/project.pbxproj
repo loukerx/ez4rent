@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEA3578A1A7662840078C84F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA357891A7662840078C84F /* main.m */; };
+		AEA3578D1A7662840078C84F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA3578C1A7662840078C84F /* AppDelegate.m */; };
+		AEA357901A7662840078C84F /* ez4rent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEA3578E1A7662840078C84F /* ez4rent.xcdatamodeld */; };
+		AEA357931A7662840078C84F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA357921A7662840078C84F /* ViewController.m */; };
+		AEA357961A7662840078C84F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA357941A7662840078C84F /* Main.storyboard */; };
+		AEA357981A7662840078C84F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA357971A7662840078C84F /* Images.xcassets */; };
+		AEA3579B1A7662840078C84F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA357991A7662840078C84F /* LaunchScreen.xib */; };
+		AEA357A71A7662840078C84F /* ez4rentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA357A61A7662840078C84F /* ez4rentTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEA357A11A7662840078C84F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEA3577C1A7662840078C84F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEA357831A7662840078C84F;
+			remoteInfo = ez4rent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AEA357841A7662840078C84F /* ez4rent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ez4rent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEA357881A7662840078C84F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEA357891A7662840078C84F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEA3578B1A7662840078C84F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AEA3578C1A7662840078C84F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AEA3578F1A7662840078C84F /* ez4rent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ez4rent.xcdatamodel; sourceTree = "<group>"; };
+		AEA357911A7662840078C84F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AEA357921A7662840078C84F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AEA357951A7662840078C84F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEA357971A7662840078C84F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AEA3579A1A7662840078C84F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AEA357A01A7662840078C84F /* ez4rentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ez4rentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEA357A51A7662840078C84F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEA357A61A7662840078C84F /* ez4rentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ez4rentTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEA357811A7662840078C84F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEA3579D1A7662840078C84F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEA3577B1A7662840078C84F = {
+			isa = PBXGroup;
+			children = (
+				AEA357861A7662840078C84F /* ez4rent */,
+				AEA357A31A7662840078C84F /* ez4rentTests */,
+				AEA357851A7662840078C84F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEA357851A7662840078C84F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEA357841A7662840078C84F /* ez4rent.app */,
+				AEA357A01A7662840078C84F /* ez4rentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEA357861A7662840078C84F /* ez4rent */ = {
+			isa = PBXGroup;
+			children = (
+				AEA3578B1A7662840078C84F /* AppDelegate.h */,
+				AEA3578C1A7662840078C84F /* AppDelegate.m */,
+				AEA357911A7662840078C84F /* ViewController.h */,
+				AEA357921A7662840078C84F /* ViewController.m */,
+				AEA357941A7662840078C84F /* Main.storyboard */,
+				AEA357971A7662840078C84F /* Images.xcassets */,
+				AEA357991A7662840078C84F /* LaunchScreen.xib */,
+				AEA3578E1A7662840078C84F /* ez4rent.xcdatamodeld */,
+				AEA357871A7662840078C84F /* Supporting Files */,
+			);
+			path = ez4rent;
+			sourceTree = "<group>";
+		};
+		AEA357871A7662840078C84F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEA357881A7662840078C84F /* Info.plist */,
+				AEA357891A7662840078C84F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEA357A31A7662840078C84F /* ez4rentTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEA357A61A7662840078C84F /* ez4rentTests.m */,
+				AEA357A41A7662840078C84F /* Supporting Files */,
+			);
+			path = ez4rentTests;
+			sourceTree = "<group>";
+		};
+		AEA357A41A7662840078C84F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEA357A51A7662840078C84F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEA357831A7662840078C84F /* ez4rent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEA357AA1A7662840078C84F /* Build configuration list for PBXNativeTarget "ez4rent" */;
+			buildPhases = (
+				AEA357801A7662840078C84F /* Sources */,
+				AEA357811A7662840078C84F /* Frameworks */,
+				AEA357821A7662840078C84F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ez4rent;
+			productName = ez4rent;
+			productReference = AEA357841A7662840078C84F /* ez4rent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEA3579F1A7662840078C84F /* ez4rentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEA357AD1A7662840078C84F /* Build configuration list for PBXNativeTarget "ez4rentTests" */;
+			buildPhases = (
+				AEA3579C1A7662840078C84F /* Sources */,
+				AEA3579D1A7662840078C84F /* Frameworks */,
+				AEA3579E1A7662840078C84F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEA357A21A7662840078C84F /* PBXTargetDependency */,
+			);
+			name = ez4rentTests;
+			productName = ez4rentTests;
+			productReference = AEA357A01A7662840078C84F /* ez4rentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEA3577C1A7662840078C84F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Yin Hua";
+				TargetAttributes = {
+					AEA357831A7662840078C84F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					AEA3579F1A7662840078C84F = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = AEA357831A7662840078C84F;
+					};
+				};
+			};
+			buildConfigurationList = AEA3577F1A7662840078C84F /* Build configuration list for PBXProject "ez4rent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEA3577B1A7662840078C84F;
+			productRefGroup = AEA357851A7662840078C84F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEA357831A7662840078C84F /* ez4rent */,
+				AEA3579F1A7662840078C84F /* ez4rentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEA357821A7662840078C84F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA357961A7662840078C84F /* Main.storyboard in Resources */,
+				AEA3579B1A7662840078C84F /* LaunchScreen.xib in Resources */,
+				AEA357981A7662840078C84F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEA3579E1A7662840078C84F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEA357801A7662840078C84F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA3578D1A7662840078C84F /* AppDelegate.m in Sources */,
+				AEA357901A7662840078C84F /* ez4rent.xcdatamodeld in Sources */,
+				AEA357931A7662840078C84F /* ViewController.m in Sources */,
+				AEA3578A1A7662840078C84F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEA3579C1A7662840078C84F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA357A71A7662840078C84F /* ez4rentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEA357A21A7662840078C84F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEA357831A7662840078C84F /* ez4rent */;
+			targetProxy = AEA357A11A7662840078C84F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEA357941A7662840078C84F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEA357951A7662840078C84F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AEA357991A7662840078C84F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEA3579A1A7662840078C84F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEA357A81A7662840078C84F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEA357A91A7662840078C84F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEA357AB1A7662840078C84F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ez4rent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AEA357AC1A7662840078C84F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ez4rent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AEA357AE1A7662840078C84F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ez4rentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ez4rent.app/ez4rent";
+			};
+			name = Debug;
+		};
+		AEA357AF1A7662840078C84F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ez4rentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ez4rent.app/ez4rent";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEA3577F1A7662840078C84F /* Build configuration list for PBXProject "ez4rent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEA357A81A7662840078C84F /* Debug */,
+				AEA357A91A7662840078C84F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEA357AA1A7662840078C84F /* Build configuration list for PBXNativeTarget "ez4rent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEA357AB1A7662840078C84F /* Debug */,
+				AEA357AC1A7662840078C84F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AEA357AD1A7662840078C84F /* Build configuration list for PBXNativeTarget "ez4rentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEA357AE1A7662840078C84F /* Debug */,
+				AEA357AF1A7662840078C84F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AEA3578E1A7662840078C84F /* ez4rent.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AEA3578F1A7662840078C84F /* ez4rent.xcdatamodel */,
+			);
+			currentVersion = AEA3578F1A7662840078C84F /* ez4rent.xcdatamodel */;
+			path = ez4rent.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AEA3577C1A7662840078C84F /* Project object */;
+}
