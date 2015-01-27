@@ -121,11 +121,10 @@
 		AEA357861A7662840078C84F /* ez4rent */ = {
 			isa = PBXGroup;
 			children = (
-				AEA357B01A7670490078C84F /* IQKeyBoardManager */,
+				AEBEFE801A77B564000EB762 /* lib */,
 				AEA3578B1A7662840078C84F /* AppDelegate.h */,
 				AEA3578C1A7662840078C84F /* AppDelegate.m */,
-				AEA357911A7662840078C84F /* ViewController.h */,
-				AEA357921A7662840078C84F /* ViewController.m */,
+				AEBEFE7F1A77B539000EB762 /* Controllers */,
 				AEA357941A7662840078C84F /* Main.storyboard */,
 				AEA357971A7662840078C84F /* Images.xcassets */,
 				AEA357991A7662840078C84F /* LaunchScreen.xib */,
@@ -240,6 +239,23 @@
 				AEA357D01A7670490078C84F /* IQKeyboardManager.bundle */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		AEBEFE7F1A77B539000EB762 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEA357911A7662840078C84F /* ViewController.h */,
+				AEA357921A7662840078C84F /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AEBEFE801A77B564000EB762 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				AEA357B01A7670490078C84F /* IQKeyBoardManager */,
+			);
+			name = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,6 +573,7 @@
 				AEA357AC1A7662840078C84F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEA357AD1A7662840078C84F /* Build configuration list for PBXNativeTarget "ez4rentTests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +582,7 @@
 				AEA357AF1A7662840078C84F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
