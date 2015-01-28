@@ -449,10 +449,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uj2-0a-YnV">
-                                                    <rect key="frame" x="225" y="0.0" width="150" height="199.5"/>
+                                                    <rect key="frame" x="200" y="0.0" width="200" height="199.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="200" id="uSb-LY-0p0"/>
-                                                        <constraint firstAttribute="width" constant="150" id="ulO-Rc-pKX"/>
+                                                        <constraint firstAttribute="width" constant="200" id="ulO-Rc-pKX"/>
                                                     </constraints>
                                                 </imageView>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$1500" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oyr-Bs-s82">
@@ -504,7 +504,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYk-cj-gev" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6420" y="347"/>
+            <point key="canvasLocation" x="5495" y="311"/>
         </scene>
         <!--Title-->
         <scene sceneID="2Pa-UM-Ewh">
@@ -523,10 +523,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4IP-lB-04y">
-                                                    <rect key="frame" x="225" y="0.0" width="150" height="199.5"/>
+                                                    <rect key="frame" x="200" y="0.0" width="200" height="199.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="200" id="9Gi-d6-cfv"/>
-                                                        <constraint firstAttribute="width" constant="150" id="tVQ-Kp-4Yk"/>
+                                                        <constraint firstAttribute="width" constant="200" id="tVQ-Kp-4Yk"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
@@ -640,7 +640,35 @@
                     <view key="view" contentMode="scaleToFill" id="18M-hN-EXs">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$200" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ioK-xo-sPo">
+                                <rect key="frame" x="240" y="280" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="biy-Ld-Ei2"/>
+                                    <constraint firstAttribute="height" constant="40" id="tVP-Vm-Psk"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price per week" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fP-AC-SXx">
+                                <rect key="frame" x="258" y="251" width="85" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="657-OA-Kv7"/>
+                                    <constraint firstAttribute="height" constant="21" id="dCc-b7-Cdr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="ioK-xo-sPo" secondAttribute="centerY" id="JoQ-1S-cfB"/>
+                            <constraint firstAttribute="centerX" secondItem="ioK-xo-sPo" secondAttribute="centerX" id="djb-oz-p5N"/>
+                            <constraint firstAttribute="centerX" secondItem="8fP-AC-SXx" secondAttribute="centerX" id="k3o-01-3if"/>
+                            <constraint firstItem="ioK-xo-sPo" firstAttribute="top" secondItem="8fP-AC-SXx" secondAttribute="bottom" constant="8" id="kmw-kS-w6o"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Select a Price" id="jJo-su-ivj">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="3WU-Of-tSX"/>
@@ -676,26 +704,24 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kyy-uu-5bJ">
-                                <rect key="frame" x="225" y="64" width="150" height="200"/>
+                                <rect key="frame" x="200" y="64" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="1H0-Wh-kK5"/>
-                                    <constraint firstAttribute="width" constant="150" id="2Aj-Pk-wS1"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="I3p-iH-voH"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="O3i-us-oqB"/>
+                                    <constraint firstAttribute="width" constant="200" id="2Aj-Pk-wS1"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CwB-le-sZt">
-                                <rect key="frame" x="0.0" y="264" width="60" height="80"/>
+                                <rect key="frame" x="0.0" y="264" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Xbk-pQ-glD"/>
-                                    <constraint firstAttribute="width" constant="60" id="c4O-6z-2TS"/>
+                                    <constraint firstAttribute="width" constant="80" id="c4O-6z-2TS"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZbO-iD-0Rf">
-                                <rect key="frame" x="60" y="264" width="60" height="80"/>
+                                <rect key="frame" x="80" y="264" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="eHK-g2-sl5"/>
-                                    <constraint firstAttribute="width" constant="60" id="sSg-11-ztI"/>
+                                    <constraint firstAttribute="width" constant="80" id="sSg-11-ztI"/>
                                 </constraints>
                             </imageView>
                         </subviews>

@@ -96,6 +96,10 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
    
     UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    //edit this image size to fit imageView [150x200 & 60x80]
+    //....
+    //....
+    
     self.image1.image = chosenImage;
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
