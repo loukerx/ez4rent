@@ -10,7 +10,6 @@
 		AEA3578A1A7662840078C84F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA357891A7662840078C84F /* main.m */; };
 		AEA3578D1A7662840078C84F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA3578C1A7662840078C84F /* AppDelegate.m */; };
 		AEA357901A7662840078C84F /* ez4rent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEA3578E1A7662840078C84F /* ez4rent.xcdatamodeld */; };
-		AEA357931A7662840078C84F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA357921A7662840078C84F /* ViewController.m */; };
 		AEA357961A7662840078C84F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA357941A7662840078C84F /* Main.storyboard */; };
 		AEA357981A7662840078C84F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA357971A7662840078C84F /* Images.xcassets */; };
 		AEA3579B1A7662840078C84F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA357991A7662840078C84F /* LaunchScreen.xib */; };
@@ -27,6 +26,8 @@
 		AEA357DA1A7670490078C84F /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA357CB1A7670490078C84F /* IQToolbar.m */; };
 		AEA357DB1A7670490078C84F /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA357CD1A7670490078C84F /* IQUIView+IQKeyboardToolbar.m */; };
 		AEA357DC1A7670490078C84F /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AEA357D01A7670490078C84F /* IQKeyboardManager.bundle */; };
+		AEB622791A7870A60013E816 /* PhotosController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB622781A7870A60013E816 /* PhotosController.m */; };
+		AEB6227C1A78771B0013E816 /* InfoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6227B1A78771B0013E816 /* InfoListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +47,6 @@
 		AEA3578B1A7662840078C84F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AEA3578C1A7662840078C84F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AEA3578F1A7662840078C84F /* ez4rent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ez4rent.xcdatamodel; sourceTree = "<group>"; };
-		AEA357911A7662840078C84F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AEA357921A7662840078C84F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AEA357951A7662840078C84F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEA357971A7662840078C84F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AEA3579A1A7662840078C84F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -80,6 +79,10 @@
 		AEA357CD1A7670490078C84F /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
 		AEA357CE1A7670490078C84F /* KeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardManager.h; sourceTree = "<group>"; };
 		AEA357D01A7670490078C84F /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		AEB622771A7870A60013E816 /* PhotosController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosController.h; sourceTree = "<group>"; };
+		AEB622781A7870A60013E816 /* PhotosController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosController.m; sourceTree = "<group>"; };
+		AEB6227A1A78771B0013E816 /* InfoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoListTableViewController.h; sourceTree = "<group>"; };
+		AEB6227B1A78771B0013E816 /* InfoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,8 +247,10 @@
 		AEBEFE7F1A77B539000EB762 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AEA357911A7662840078C84F /* ViewController.h */,
-				AEA357921A7662840078C84F /* ViewController.m */,
+				AEB622771A7870A60013E816 /* PhotosController.h */,
+				AEB622781A7870A60013E816 /* PhotosController.m */,
+				AEB6227A1A78771B0013E816 /* InfoListTableViewController.h */,
+				AEB6227B1A78771B0013E816 /* InfoListTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -366,14 +371,15 @@
 				AEA357901A7662840078C84F /* ez4rent.xcdatamodeld in Sources */,
 				AEA357D81A7670490078C84F /* IQBarButtonItem.m in Sources */,
 				AEA357D31A7670490078C84F /* IQUIWindow+Hierarchy.m in Sources */,
-				AEA357931A7662840078C84F /* ViewController.m in Sources */,
 				AEA357D51A7670490078C84F /* IQKeyboardReturnKeyHandler.m in Sources */,
 				AEA357D41A7670490078C84F /* IQKeyboardManager.m in Sources */,
 				AEA3578A1A7662840078C84F /* main.m in Sources */,
 				AEA357DA1A7670490078C84F /* IQToolbar.m in Sources */,
+				AEB6227C1A78771B0013E816 /* InfoListTableViewController.m in Sources */,
 				AEA357D21A7670490078C84F /* IQUIView+Hierarchy.m in Sources */,
 				AEA357D61A7670490078C84F /* IQSegmentedNextPrevious.m in Sources */,
 				AEA357D71A7670490078C84F /* IQTextView.m in Sources */,
+				AEB622791A7870A60013E816 /* PhotosController.m in Sources */,
 				AEA357D11A7670490078C84F /* IQNSArray+Sort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
