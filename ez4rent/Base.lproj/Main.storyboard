@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Search View Controller-->
         <scene sceneID="jo4-al-vB4">
             <objects>
-                <viewController id="kGU-78-MeI" sceneMemberID="viewController">
+                <viewController id="kGU-78-MeI" customClass="SearchViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y4q-vj-ANN"/>
                         <viewControllerLayoutGuide type="bottom" id="wVH-GR-JjA"/>
@@ -18,13 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="search your location" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="M25-C2-RKy">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="input your suburb name or postcode" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="M25-C2-RKy">
                                 <rect key="frame" x="0.0" y="64" width="600" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="FxP-rw-6gg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eJF-Wl-ama">
                                 <rect key="frame" x="0.0" y="109" width="600" height="447"/>
@@ -43,11 +43,17 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="XRU-8f-lRn">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="lcn-vo-vcI"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="lcn-vo-vcI">
+                            <connections>
+                                <action selector="Cancel:" destination="kGU-78-MeI" id="gWY-Xj-nlB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="mapView" destination="eJF-Wl-ama" id="C4V-zg-WfH"/>
                         <outlet property="searchDisplayController" destination="Cs0-oP-oQJ" id="KHM-zK-RfL"/>
+                        <outlet property="searchText" destination="M25-C2-RKy" id="JdK-GG-2Gv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Zg-dK-vQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -170,12 +176,12 @@
         <scene sceneID="v3T-sq-LoE">
             <objects>
                 <tableViewController id="NJg-6I-V8L" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ygu-bk-gML">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ygu-bk-gML">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection id="YKq-l6-D3y">
+                            <tableViewSection headerTitle="What type of space do you want to list?" id="YKq-l6-D3y">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="VYo-hk-ONT" detailTextLabel="38d-K7-xqu" imageView="yjI-fa-tMT" rowHeight="64" style="IBUITableViewCellStyleSubtitle" id="PdS-QB-Tjv">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -200,33 +206,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Ryu-Fg-UZw" kind="show" id="b29-e1-YaF"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="NhY-YN-zXi" detailTextLabel="F8t-ds-ysy" imageView="1KC-MX-2a9" rowHeight="64" style="IBUITableViewCellStyleSubtitle" id="Trk-KX-0Av">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Trk-KX-0Av" id="PEm-n6-4b7">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shared Room" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NhY-YN-zXi">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Share a room with a new friend" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F8t-ds-ysy">
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="roomType-temp_icon 35x35@1x" id="1KC-MX-2a9">
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Ryu-Fg-UZw" kind="show" id="LPi-go-85T"/>
+                                            <segue destination="Ryu-Fg-UZw" kind="show" id="X5b-Ge-C5Y"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Wgu-Mq-MqU" detailTextLabel="5HS-ex-zns" imageView="aeE-4m-LOw" rowHeight="64" style="IBUITableViewCellStyleSubtitle" id="EgV-xs-IOC">
@@ -252,7 +232,33 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Ryu-Fg-UZw" kind="show" id="3Sj-kB-yGH"/>
+                                            <segue destination="Ryu-Fg-UZw" kind="show" id="Hnf-9v-z7L"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="NhY-YN-zXi" detailTextLabel="F8t-ds-ysy" imageView="1KC-MX-2a9" rowHeight="64" style="IBUITableViewCellStyleSubtitle" id="Trk-KX-0Av">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Trk-KX-0Av" id="PEm-n6-4b7">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Shared Room" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NhY-YN-zXi">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Share a room with a new friend" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F8t-ds-ysy">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="roomType-temp_icon 35x35@1x" id="1KC-MX-2a9">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Ryu-Fg-UZw" kind="show" id="7uG-he-S6n"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -272,12 +278,12 @@
         <scene sceneID="M9G-be-9Uy">
             <objects>
                 <tableViewController id="Ryu-Fg-UZw" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="F2b-le-ZdI">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="F2b-le-ZdI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection id="2Lc-SV-DFv">
+                            <tableViewSection headerTitle="What type of place is your entire home in?" id="2Lc-SV-DFv">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="kf2-dl-yN4" imageView="2A6-hd-9jh" rowHeight="64" style="IBUITableViewCellStyleDefault" id="Vws-tr-LtB">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -395,7 +401,7 @@
         <!--Location-->
         <scene sceneID="TWa-qe-5ik">
             <objects>
-                <viewController id="PNz-m4-VEv" sceneMemberID="viewController">
+                <viewController id="PNz-m4-VEv" customClass="LocationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xEV-qh-l6Z"/>
                         <viewControllerLayoutGuide type="bottom" id="RNs-yz-skZ"/>
@@ -404,7 +410,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Which surburb is your apartment located in?" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jmW-P2-V7V">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Which surburb is your apartment located in?" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jmW-P2-V7V" customClass="l">
                                 <rect key="frame" x="0.0" y="64" width="600" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="qLN-aq-voc"/>
@@ -412,12 +418,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jTx-fk-Af2">
+                                <rect key="frame" x="0.0" y="116" width="600" height="484"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="jmW-P2-V7V" secondAttribute="trailing" constant="-16" id="0ff-NF-g4G"/>
+                            <constraint firstItem="RNs-yz-skZ" firstAttribute="top" secondItem="jTx-fk-Af2" secondAttribute="bottom" id="7La-cO-OFP"/>
+                            <constraint firstItem="jTx-fk-Af2" firstAttribute="top" secondItem="jmW-P2-V7V" secondAttribute="bottom" constant="2" id="Elg-vN-e35"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jTx-fk-Af2" secondAttribute="trailing" constant="-16" id="Qep-YG-MUJ"/>
                             <constraint firstItem="jmW-P2-V7V" firstAttribute="top" secondItem="xEV-qh-l6Z" secondAttribute="bottom" id="VJb-Ad-qMV"/>
                             <constraint firstItem="jmW-P2-V7V" firstAttribute="leading" secondItem="b8c-cJ-grs" secondAttribute="leadingMargin" constant="-16" id="cKm-KR-EiT"/>
+                            <constraint firstItem="jTx-fk-Af2" firstAttribute="leading" secondItem="b8c-cJ-grs" secondAttribute="leadingMargin" constant="-16" id="kNT-VU-7P5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Location" id="Ls7-rO-QQm">
@@ -799,7 +812,7 @@
         <image name="roomType-temp_icon 35x35@1x" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="7uG-he-S6n"/>
         <segue reference="ywu-EE-vbt"/>
-        <segue reference="b29-e1-YaF"/>
     </inferredMetricsTieBreakers>
 </document>
