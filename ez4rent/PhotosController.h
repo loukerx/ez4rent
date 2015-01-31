@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PhotosController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface PhotosController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate, UIActionSheetDelegate>
 - (IBAction)takePhotoAction:(id)sender;
+- (IBAction)saveButton:(id)sender;
+
 
 @end

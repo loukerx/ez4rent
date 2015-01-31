@@ -22,6 +22,10 @@
 //    [[IQKeyboardManager sharedManager] setKeyboardAppearance:UIKeyboardAppearanceDefault];
 //    [[IQKeyboardManager sharedManager] setShouldResignOnTouchOutside:TRUE];
     
+    //setting
+    self.mRoomPrice = @"";
+    self.mRoomSummary = @"";
+    self.mRoomImages = [[NSMutableArray alloc]init];
     
     return YES;
 }

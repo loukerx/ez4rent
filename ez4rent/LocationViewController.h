@@ -11,5 +11,6 @@
 #import <CoreLocation/CoreLocation.h>
 
 @interface LocationViewController : UIViewController  <MKMapViewDelegate,CLLocationManagerDelegate,UITextFieldDelegate>
+- (IBAction)NextButton:(id)sender;
 
 @end
