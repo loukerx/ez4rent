@@ -23,9 +23,23 @@
 //    [[IQKeyboardManager sharedManager] setShouldResignOnTouchOutside:TRUE];
     
     //setting
+    self.mRentType = @"";
+    self.mBuildingType = @"";
+    self.mStreet = @"1 the avenue";
+    self.mSuburb = @"Hurstville";
+    self.mCity = @"Sydney";
+    self.mBedType = @"double bed";
+    self.mBedrooms = @"2";
+    self.mBathrooms = @"2";
+    self.mBathrooms = @"3";
+    self.mAvailableDate = @"1st Feb";
+    self.mAccommodates = @"3";
     self.mRoomPrice = @"";
     self.mRoomSummary = @"";
     self.mRoomImages = [[NSMutableArray alloc]init];
+    
+    self.mName = @"luke";
+    self.mMobile = @"0412345678";
     
     return YES;
 }

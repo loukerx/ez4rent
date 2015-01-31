@@ -7,8 +7,38 @@
 //
 
 #import "PreviewTableViewController.h"
+#import "AppDelegate.h"
+
 
 @interface PreviewTableViewController ()
+{
+     id _mDelegate;
+}
+
+
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *rentTypeDetail;
+@property (weak, nonatomic) IBOutlet UILabel *buildingTypeDetail;
+@property (weak, nonatomic) IBOutlet UILabel *streetDetail;
+@property (weak, nonatomic) IBOutlet UILabel *suburbDetail;
+@property (weak, nonatomic) IBOutlet UILabel *cityDetail;
+@property (weak, nonatomic) IBOutlet UILabel *bedTypeDetail;
+@property (weak, nonatomic) IBOutlet UILabel *bedroomsDetail;
+@property (weak, nonatomic) IBOutlet UILabel *bathroomsDetail;
+@property (weak, nonatomic) IBOutlet UILabel *accommodatesDetail;
+@property (weak, nonatomic) IBOutlet UILabel *contactNameDetail;
+@property (weak, nonatomic) IBOutlet UILabel *contactMobileDetail;
+@property (weak, nonatomic) IBOutlet UILabel *roomSummaryDetail;
+
+
+
+@property (weak, nonatomic) IBOutlet UILabel *availableDateDetail;
+
+
+
 
 @end
 
@@ -16,12 +46,55 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+        _mDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //setting
+    if ([[_mDelegate mRoomImages] count]>0) {
+        self.imageView.image = [_mDelegate mRoomImages][0];
+    }
+    if ([_mDelegate mRoomPrice].length>0) {
+        self.priceLabel.text = [NSString stringWithFormat:@"$%@",[_mDelegate mRoomPrice]];
+    }
+    if ([_mDelegate mRentType].length>0) {
+        self.rentTypeDetail.text = [NSString stringWithFormat:@"%@",[_mDelegate mRentType]];
+    }
+    if ([_mDelegate mBuildingType].length>0) {
+        self.buildingTypeDetail.text = [NSString stringWithFormat:@"%@",[_mDelegate mBuildingType]];
+    }
+    if ([_mDelegate mStreet].length>0) {
+        self.streetDetail.text = [NSString stringWithFormat:@"%@",[_mDelegate mStreet]];
+    }
+    if ([_mDelegate mSuburb].length>0) {
+        self.suburbDetail.text = [NSString stringWithFormat:@"%@",[_mDelegate mSuburb]];
+    }
+    if ([_mDelegate mCity].length>0) {
+        self.cityDetail.text = [NSString stringWithFormat:@"%@",[_mDelegate mCity]];
+    }
+    if ([_mDelegate mAvailableDate].length>0) {
+        self.availableDateDetail.text = [NSString stringWithFormat:@"%@",[_mDelegate mAvailableDate]];
+    }
+    if ([_mDelegate mBedType].length>0) {
+        self.bedTypeDetail.text = [NSString stringWithFormat:@"%@",[_mDelegate mBedType]];
+    }
+    if ([_mDelegate mBedrooms].length>0) {
+        self.bedroomsDetail.text = [NSString stringWithFormat:@"%@",[_mDelegate mBedrooms]];
+    }
+    if ([_mDelegate mBathrooms].length>0) {
+        self.bathroomsDetail.text = [NSString stringWithFormat:@"%@",[_mDelegate mBathrooms]];
+    }
+    if ([_mDelegate mAccommodates].length>0) {
+        self.accommodatesDetail.text = [NSString stringWithFormat:@"%@",[_mDelegate mAccommodates]];
+    }
+    if ([_mDelegate mName].length>0) {
+        self.contactNameDetail.text = [NSString stringWithFormat:@"%@",[_mDelegate mName]];
+    }
+    if ([_mDelegate mMobile].length>0) {
+        self.contactMobileDetail.text = [NSString stringWithFormat:@"%@",[_mDelegate mMobile]];
+    }
+    if ([_mDelegate mRoomSummary].length>0) {
+        self.roomSummaryDetail.text = [NSString stringWithFormat:@"%@",[_mDelegate mRoomSummary]];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,72 +102,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
 
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//#warning Potentially incomplete method implementation.
-//    // Return the number of sections.
-//    return 0;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//#warning Incomplete method implementation.
-//    // Return the number of rows in the section.
-//    return 0;
-//}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

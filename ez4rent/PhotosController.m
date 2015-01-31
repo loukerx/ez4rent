@@ -61,7 +61,7 @@
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
-    NSLog(@"the %@ button was tapped.", [actionSheet buttonTitleAtIndex:buttonIndex]);
+//    NSLog(@"the %@ button was tapped.", [actionSheet buttonTitleAtIndex:buttonIndex]);
     
     switch (buttonIndex) {
         case 0:

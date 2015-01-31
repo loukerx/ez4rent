@@ -29,8 +29,8 @@
 @property (strong, nonatomic) NSString *mBedType;
 @property (strong, nonatomic) NSString *mBedrooms;
 @property (strong, nonatomic) NSString *mBathrooms;
-@property (strong, nonatomic) NSString *maccomendates;
-@property (strong, nonatomic) NSString *mAvaliableDate;
+@property (strong, nonatomic) NSString *mAccommodates;
+@property (strong, nonatomic) NSString *mAvailableDate;
 @property (strong, nonatomic) NSString *mRoomPrice;
 @property (strong, nonatomic) NSString *mRoomSummary;
 @property (strong, nonatomic) NSMutableArray *mRoomImages;
