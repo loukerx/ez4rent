@@ -98,20 +98,18 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//   
-//    if ([segue.identifier isEqualToString:@"To Check List"]) {
-//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//        RecipeDetailViewController *destViewController = segue.destinationViewController;
-//        destViewController.recipeName = [recipes objectAtIndex:indexPath.row];
-//    }
-//    
-//    
-//}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+   
+    if ([segue.identifier isEqualToString:@"To Check List"]) {
+            [_mDelegate setMSuburb:self.searchText.text];
+    }
+    
+    
+}
 
 
 - (IBAction)NextButton:(id)sender {
-    [_mDelegate setMSuburb:self.searchText.text];
+//    [_mDelegate setMSuburb:self.searchText.text];
     
 }
 @end

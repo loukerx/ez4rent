@@ -21,6 +21,8 @@
 - (NSURL *)applicationDocumentsDirectory;
 
 // create a object for room, address, user
+@property (strong, nonatomic) NSString *mName;
+@property (strong, nonatomic) NSString *mMobile;
 @property (strong, nonatomic) NSString *mRentType;
 @property (strong, nonatomic) NSString *mBuildingType;
 @property (strong, nonatomic) NSString *mStreet;
@@ -35,8 +37,7 @@
 @property (strong, nonatomic) NSString *mRoomSummary;
 @property (strong, nonatomic) NSMutableArray *mRoomImages;
 
-@property (strong, nonatomic) NSString *mName;
-@property (strong, nonatomic) NSString *mMobile;
+
 
 
 

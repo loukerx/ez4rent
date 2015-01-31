@@ -8,7 +8,7 @@
 
 #import "PreviewTableViewController.h"
 #import "AppDelegate.h"
-
+#import <Parse/Parse.h>
 
 @interface PreviewTableViewController ()
 {
@@ -97,11 +97,52 @@
     }
 }
 
+
+-(void)saveIntoDatabase
+{
+    
+    
+    PFObject *room = [PFObject objectWithClassName:@"Room"];
+    room[@"name"] = [_mDelegate mName];
+    room[@"mobile"] = [_mDelegate mMobile];
+    room[@"rentType"] = [_mDelegate mRentType];
+    room[@"buildingType"] = [_mDelegate mBuildingType];
+    room[@"street"] = [_mDelegate mStreet];
+    room[@"suburb"] = [_mDelegate mSuburb];
+    room[@"city"] = [_mDelegate mCity];
+    room[@"bedType"] = [_mDelegate mBedType];
+    room[@"bedrooms"] = [_mDelegate mBedrooms];
+    room[@"bathrooms"] = [_mDelegate mBathrooms];
+    room[@"accommodates"] = [_mDelegate mAccommodates];
+    room[@"availableDate"] = [_mDelegate mAvailableDate];
+    room[@"roomPrice"] = [_mDelegate mRoomPrice];
+    room[@"roomSummary"] = [_mDelegate mRoomSummary];
+    
+    //subObject Room Images
+    
+
+    [room saveInBackground];
+    
+    
+    
+
+}
+
+
+
+
+
+
+
+- (IBAction)releaseButton:(id)sender {
+    [self saveIntoDatabase];
+    [self performSegueWithIdentifier:@"To Main" sender:self];
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 
 @end

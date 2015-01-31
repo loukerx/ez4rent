@@ -28,6 +28,22 @@
 		AEB16C941A79DBC70060A2B6 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB16C931A79DBC70060A2B6 /* SearchViewController.m */; };
 		AEB622791A7870A60013E816 /* PhotosController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB622781A7870A60013E816 /* PhotosController.m */; };
 		AEB6227C1A78771B0013E816 /* InfoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6227B1A78771B0013E816 /* InfoListTableViewController.m */; };
+		AEB79B6B1A7CA0CE001CB0F2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B6A1A7CA0CE001CB0F2 /* Parse.framework */; };
+		AEB79B6D1A7CA0FC001CB0F2 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B6C1A7CA0FC001CB0F2 /* Bolts.framework */; };
+		AEB79B6F1A7CA146001CB0F2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B6E1A7CA146001CB0F2 /* AudioToolbox.framework */; };
+		AEB79B711A7CA14D001CB0F2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B701A7CA14D001CB0F2 /* CFNetwork.framework */; };
+		AEB79B731A7CA16D001CB0F2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B721A7CA16D001CB0F2 /* MobileCoreServices.framework */; };
+		AEB79B751A7CA175001CB0F2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B741A7CA175001CB0F2 /* QuartzCore.framework */; };
+		AEB79B771A7CA18B001CB0F2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B761A7CA18B001CB0F2 /* Security.framework */; };
+		AEB79B791A7CA193001CB0F2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B781A7CA193001CB0F2 /* StoreKit.framework */; };
+		AEB79B7B1A7CA19D001CB0F2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B7A1A7CA19D001CB0F2 /* SystemConfiguration.framework */; };
+		AEB79B7D1A7CA1A5001CB0F2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B7C1A7CA1A5001CB0F2 /* libz.dylib */; };
+		AEB79B7F1A7CA1AD001CB0F2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B7E1A7CA1AD001CB0F2 /* libsqlite3.dylib */; };
+		AEB79B851A7CC98A001CB0F2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB79B841A7CC98A001CB0F2 /* MainViewController.m */; };
+		AEB79B881A7CCAD4001CB0F2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB79B871A7CCAD4001CB0F2 /* MBProgressHUD.m */; };
+		AEB79B8C1A7CD5D6001CB0F2 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEB79B8B1A7CD5D6001CB0F2 /* MainTableViewCell.xib */; };
+		AEB79B8F1A7CDD80001CB0F2 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB79B8E1A7CDD80001CB0F2 /* MainTableViewCell.m */; };
+		AEB79B951A7CE603001CB0F2 /* RoomDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB79B941A7CE603001CB0F2 /* RoomDetailsTableViewController.m */; };
 		AEB8AF461A7A179C00668599 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB8AF451A7A179C00668599 /* LocationViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +93,26 @@
 		AEB622781A7870A60013E816 /* PhotosController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosController.m; sourceTree = "<group>"; };
 		AEB6227A1A78771B0013E816 /* InfoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoListTableViewController.h; sourceTree = "<group>"; };
 		AEB6227B1A78771B0013E816 /* InfoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoListTableViewController.m; sourceTree = "<group>"; };
+		AEB79B6A1A7CA0CE001CB0F2 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ez4rent/Parse.framework; sourceTree = "<group>"; };
+		AEB79B6C1A7CA0FC001CB0F2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		AEB79B6E1A7CA146001CB0F2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AEB79B701A7CA14D001CB0F2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AEB79B721A7CA16D001CB0F2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AEB79B741A7CA175001CB0F2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AEB79B761A7CA18B001CB0F2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AEB79B781A7CA193001CB0F2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AEB79B7A1A7CA19D001CB0F2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AEB79B7C1A7CA1A5001CB0F2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AEB79B7E1A7CA1AD001CB0F2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		AEB79B831A7CC98A001CB0F2 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		AEB79B841A7CC98A001CB0F2 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		AEB79B861A7CCAD4001CB0F2 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		AEB79B871A7CCAD4001CB0F2 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		AEB79B8B1A7CD5D6001CB0F2 /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		AEB79B8D1A7CDD80001CB0F2 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		AEB79B8E1A7CDD80001CB0F2 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		AEB79B931A7CE603001CB0F2 /* RoomDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomDetailsTableViewController.h; sourceTree = "<group>"; };
+		AEB79B941A7CE603001CB0F2 /* RoomDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomDetailsTableViewController.m; sourceTree = "<group>"; };
 		AEB8AF441A7A179C00668599 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		AEB8AF451A7A179C00668599 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,11 +122,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB79B7F1A7CA1AD001CB0F2 /* libsqlite3.dylib in Frameworks */,
+				AEB79B7D1A7CA1A5001CB0F2 /* libz.dylib in Frameworks */,
+				AEB79B7B1A7CA19D001CB0F2 /* SystemConfiguration.framework in Frameworks */,
+				AEB79B791A7CA193001CB0F2 /* StoreKit.framework in Frameworks */,
+				AEB79B771A7CA18B001CB0F2 /* Security.framework in Frameworks */,
+				AEB79B751A7CA175001CB0F2 /* QuartzCore.framework in Frameworks */,
+				AEB79B731A7CA16D001CB0F2 /* MobileCoreServices.framework in Frameworks */,
 				AEB16C911A79DA650060A2B6 /* CoreGraphics.framework in Frameworks */,
+				AEB79B711A7CA14D001CB0F2 /* CFNetwork.framework in Frameworks */,
+				AEB79B6F1A7CA146001CB0F2 /* AudioToolbox.framework in Frameworks */,
 				AEB16C8F1A79DA5A0060A2B6 /* Foundation.framework in Frameworks */,
 				AEB16C8D1A79DA4B0060A2B6 /* UIKit.framework in Frameworks */,
 				AEB16C8A1A79DA140060A2B6 /* CoreLocation.framework in Frameworks */,
+				AEB79B6B1A7CA0CE001CB0F2 /* Parse.framework in Frameworks */,
 				AEB16C881A79DA080060A2B6 /* MapKit.framework in Frameworks */,
+				AEB79B6D1A7CA0FC001CB0F2 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +169,7 @@
 				AE8A0B801A7B2D6500C5E89E /* SelectPriceViewController.m */,
 				AE8A0B821A7B333900C5E89E /* WriteSummaryViewController.h */,
 				AE8A0B831A7B333900C5E89E /* WriteSummaryViewController.m */,
+				AE8A0B8A1A7B349D00C5E89E /* Main */,
 			);
 			name = SubCheckList;
 			sourceTree = "<group>";
@@ -155,6 +203,12 @@
 			children = (
 				AEB6227A1A78771B0013E816 /* InfoListTableViewController.h */,
 				AEB6227B1A78771B0013E816 /* InfoListTableViewController.m */,
+				AEB79B831A7CC98A001CB0F2 /* MainViewController.h */,
+				AEB79B841A7CC98A001CB0F2 /* MainViewController.m */,
+				AEB79B8D1A7CDD80001CB0F2 /* MainTableViewCell.h */,
+				AEB79B8E1A7CDD80001CB0F2 /* MainTableViewCell.m */,
+				AEB79B931A7CE603001CB0F2 /* RoomDetailsTableViewController.h */,
+				AEB79B941A7CE603001CB0F2 /* RoomDetailsTableViewController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -163,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				AEA357941A7662840078C84F /* Main.storyboard */,
+				AEB79B8B1A7CD5D6001CB0F2 /* MainTableViewCell.xib */,
 				AEA357991A7662840078C84F /* LaunchScreen.xib */,
 			);
 			name = xib;
@@ -231,6 +286,17 @@
 		AEB16C8B1A79DA270060A2B6 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				AEB79B7E1A7CA1AD001CB0F2 /* libsqlite3.dylib */,
+				AEB79B7C1A7CA1A5001CB0F2 /* libz.dylib */,
+				AEB79B7A1A7CA19D001CB0F2 /* SystemConfiguration.framework */,
+				AEB79B781A7CA193001CB0F2 /* StoreKit.framework */,
+				AEB79B761A7CA18B001CB0F2 /* Security.framework */,
+				AEB79B741A7CA175001CB0F2 /* QuartzCore.framework */,
+				AEB79B721A7CA16D001CB0F2 /* MobileCoreServices.framework */,
+				AEB79B701A7CA14D001CB0F2 /* CFNetwork.framework */,
+				AEB79B6E1A7CA146001CB0F2 /* AudioToolbox.framework */,
+				AEB79B6C1A7CA0FC001CB0F2 /* Bolts.framework */,
+				AEB79B6A1A7CA0CE001CB0F2 /* Parse.framework */,
 				AEB16C901A79DA650060A2B6 /* CoreGraphics.framework */,
 				AEB16C8E1A79DA5A0060A2B6 /* Foundation.framework */,
 				AEB16C8C1A79DA4B0060A2B6 /* UIKit.framework */,
@@ -247,7 +313,6 @@
 				AE8A0B881A7B347C00C5E89E /* PreCheckList */,
 				AE8A0B891A7B348600C5E89E /* CheckList */,
 				AE8A0B871A7B346000C5E89E /* SubCheckList */,
-				AE8A0B8A1A7B349D00C5E89E /* Main */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -255,6 +320,8 @@
 		AEBEFE801A77B564000EB762 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				AEB79B861A7CCAD4001CB0F2 /* MBProgressHUD.h */,
+				AEB79B871A7CCAD4001CB0F2 /* MBProgressHUD.m */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -342,6 +409,7 @@
 			files = (
 				AEA357961A7662840078C84F /* Main.storyboard in Resources */,
 				AEA3579B1A7662840078C84F /* LaunchScreen.xib in Resources */,
+				AEB79B8C1A7CD5D6001CB0F2 /* MainTableViewCell.xib in Resources */,
 				AEA357981A7662840078C84F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,13 +434,17 @@
 				AE8A0B811A7B2D6500C5E89E /* SelectPriceViewController.m in Sources */,
 				AE8A0B941A7B392000C5E89E /* PreviewTableViewController.m in Sources */,
 				AEA357901A7662840078C84F /* ez4rent.xcdatamodeld in Sources */,
+				AEB79B8F1A7CDD80001CB0F2 /* MainTableViewCell.m in Sources */,
+				AEB79B951A7CE603001CB0F2 /* RoomDetailsTableViewController.m in Sources */,
 				AE8A0B7E1A7B2C0200C5E89E /* CheckListTableViewController.m in Sources */,
 				AEB8AF461A7A179C00668599 /* LocationViewController.m in Sources */,
 				AE8A0B8E1A7B36FD00C5E89E /* RentTypeTableViewController.m in Sources */,
 				AEB16C941A79DBC70060A2B6 /* SearchViewController.m in Sources */,
 				AEA3578A1A7662840078C84F /* main.m in Sources */,
 				AEB6227C1A78771B0013E816 /* InfoListTableViewController.m in Sources */,
+				AEB79B851A7CC98A001CB0F2 /* MainViewController.m in Sources */,
 				AEB622791A7870A60013E816 /* PhotosController.m in Sources */,
+				AEB79B881A7CCAD4001CB0F2 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +569,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ez4rent",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ez4rent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -510,6 +587,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ez4rent",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ez4rent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

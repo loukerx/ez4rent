@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 //#import "IQKeyboardManager/IQKeyboardManager.h"
 @interface AppDelegate ()
 
@@ -16,7 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [Parse enableLocalDatastore];
+    
+    //[ez4Rent Database]
+    [Parse setApplicationId:@"zhoQsOh4xZqMiDLUxaEUzpsMU58EuyTudGztTDuM"
+                  clientKey:@"ugCkL6S4ln9i62MspbHN5sBSAIMDmJqnx9aJI5cj"];
+    
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
 //    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:YES];
 //    [[IQKeyboardManager sharedManager] setKeyboardAppearance:UIKeyboardAppearanceDefault];
