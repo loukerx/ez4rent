@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE74BC861A7F08B800172513 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE74BC851A7F08B800172513 /* LoginViewController.m */; };
 		AE8A0B7E1A7B2C0200C5E89E /* CheckListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8A0B7D1A7B2C0200C5E89E /* CheckListTableViewController.m */; };
 		AE8A0B811A7B2D6500C5E89E /* SelectPriceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8A0B801A7B2D6500C5E89E /* SelectPriceViewController.m */; };
 		AE8A0B841A7B333900C5E89E /* WriteSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8A0B831A7B333900C5E89E /* WriteSummaryViewController.m */; };
@@ -44,6 +45,8 @@
 		AEB79B8F1A7CDD80001CB0F2 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB79B8E1A7CDD80001CB0F2 /* MainTableViewCell.m */; };
 		AEB79B951A7CE603001CB0F2 /* RoomDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB79B941A7CE603001CB0F2 /* RoomDetailsTableViewController.m */; };
 		AEB8AF461A7A179C00668599 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB8AF451A7A179C00668599 /* LocationViewController.m */; };
+		AEBAE8AE1A7F4292000D7A62 /* RoomSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBAE8AD1A7F4292000D7A62 /* RoomSettingViewController.m */; };
+		AEBAE8B11A7F4CDB000D7A62 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBAE8B01A7F4CDB000D7A62 /* UserInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE74BC841A7F08B800172513 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		AE74BC851A7F08B800172513 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		AE8A0B7C1A7B2C0200C5E89E /* CheckListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListTableViewController.h; sourceTree = "<group>"; };
 		AE8A0B7D1A7B2C0200C5E89E /* CheckListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListTableViewController.m; sourceTree = "<group>"; };
 		AE8A0B7F1A7B2D6500C5E89E /* SelectPriceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPriceViewController.h; sourceTree = "<group>"; };
@@ -112,6 +117,10 @@
 		AEB79B941A7CE603001CB0F2 /* RoomDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomDetailsTableViewController.m; sourceTree = "<group>"; };
 		AEB8AF441A7A179C00668599 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		AEB8AF451A7A179C00668599 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		AEBAE8AC1A7F4292000D7A62 /* RoomSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomSettingViewController.h; sourceTree = "<group>"; };
+		AEBAE8AD1A7F4292000D7A62 /* RoomSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomSettingViewController.m; sourceTree = "<group>"; };
+		AEBAE8AF1A7F4CDB000D7A62 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		AEBAE8B01A7F4CDB000D7A62 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +157,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE74BC871A7F08BD00172513 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				AE74BC841A7F08B800172513 /* LoginViewController.h */,
+				AE74BC851A7F08B800172513 /* LoginViewController.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
 		AE8A0B861A7B341C00C5E89E /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +198,10 @@
 				AE8A0B8D1A7B36FD00C5E89E /* RentTypeTableViewController.m */,
 				AE8A0B8F1A7B373100C5E89E /* BuildingTypeTableViewController.h */,
 				AE8A0B901A7B373100C5E89E /* BuildingTypeTableViewController.m */,
+				AEBAE8AC1A7F4292000D7A62 /* RoomSettingViewController.h */,
+				AEBAE8AD1A7F4292000D7A62 /* RoomSettingViewController.m */,
+				AEBAE8AF1A7F4CDB000D7A62 /* UserInfoViewController.h */,
+				AEBAE8B01A7F4CDB000D7A62 /* UserInfoViewController.m */,
 			);
 			name = PreCheckList;
 			sourceTree = "<group>";
@@ -304,6 +326,7 @@
 		AEBEFE7F1A77B539000EB762 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE74BC871A7F08BD00172513 /* User */,
 				AE8A0B861A7B341C00C5E89E /* Search */,
 				AE8A0B881A7B347C00C5E89E /* PreCheckList */,
 				AE8A0B891A7B348600C5E89E /* CheckList */,
@@ -423,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEBAE8AE1A7F4292000D7A62 /* RoomSettingViewController.m in Sources */,
 				AEA3578D1A7662840078C84F /* AppDelegate.m in Sources */,
 				AE8A0B911A7B373100C5E89E /* BuildingTypeTableViewController.m in Sources */,
 				AE8A0B841A7B333900C5E89E /* WriteSummaryViewController.m in Sources */,
@@ -430,7 +454,9 @@
 				AE8A0B941A7B392000C5E89E /* PreviewTableViewController.m in Sources */,
 				AEA357901A7662840078C84F /* ez4rent.xcdatamodeld in Sources */,
 				AEB79B8F1A7CDD80001CB0F2 /* MainTableViewCell.m in Sources */,
+				AE74BC861A7F08B800172513 /* LoginViewController.m in Sources */,
 				AEB79B951A7CE603001CB0F2 /* RoomDetailsTableViewController.m in Sources */,
+				AEBAE8B11A7F4CDB000D7A62 /* UserInfoViewController.m in Sources */,
 				AE8A0B7E1A7B2C0200C5E89E /* CheckListTableViewController.m in Sources */,
 				AEB8AF461A7A179C00668599 /* LocationViewController.m in Sources */,
 				AE8A0B8E1A7B36FD00C5E89E /* RentTypeTableViewController.m in Sources */,

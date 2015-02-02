@@ -35,20 +35,19 @@
     self.mRentType = @"";
     self.mBuildingType = @"";
     self.mStreet = @"1 the avenue";
-    self.mSuburb = @"Hurstville";
+    self.mSuburb = @"";
     self.mCity = @"Sydney";
     self.mBedType = @"double bed";
-    self.mBedrooms = @"2";
-    self.mBathrooms = @"2";
-    self.mBathrooms = @"3";
+    self.mBedrooms = @"";
+    self.mBathrooms = @"";
     self.mAvailableDate = @"1st Feb";
-    self.mAccommodates = @"3";
+    self.mAccommodates = @"";
     self.mRoomPrice = @"";
     self.mRoomSummary = @"";
     self.mRoomImages = [[NSMutableArray alloc]init];
     
-    self.mName = @"luke";
-    self.mMobile = @"0412345678";
+    self.mName = @"";
+    self.mMobile = @"";
     
     return YES;
 }

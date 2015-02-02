@@ -100,7 +100,7 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
    
-    if ([segue.identifier isEqualToString:@"To Check List"]) {
+    if ([segue.identifier isEqualToString:@"To Bedroom Settings"]) {
             [_mDelegate setMSuburb:self.searchText.text];
     }
     
