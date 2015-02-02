@@ -46,9 +46,9 @@
     
     if (self.roomObject) {
 
-    
+        PFFile *roomPhotoFile = self.roomObject[@"displayPhoto"];
+        self.imageView.image = [UIImage imageWithData:[roomPhotoFile getData]];
 
-//        self.imageView.image = [_mDelegate mRoomImages][0];
 
         self.priceLabel.text = self.roomObject[@"roomPrice"];
 

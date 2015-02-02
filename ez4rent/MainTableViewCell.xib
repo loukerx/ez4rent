@@ -13,13 +13,6 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UKQ-Aa-DPG" id="7FX-6u-dqW">
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" tag="101" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qid-Qt-XZV">
-                        <rect key="frame" x="90" y="-1" width="200" height="200.5"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="200" id="XXq-Pq-cgW"/>
-                            <constraint firstAttribute="width" constant="200" id="mBw-Q3-cfW"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1700" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nER-zv-SiI">
                         <rect key="frame" x="0.0" y="161" width="75" height="30"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -33,24 +26,33 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICW-Yt-bRi">
                         <rect key="frame" x="0.0" y="8" width="75" height="30"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="MJG-pN-Iyr"/>
                             <constraint firstAttribute="width" constant="75" id="Y4R-pf-LtH"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" tag="104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suburb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fks-kA-9Uk">
-                        <rect key="frame" x="140" y="156.5" width="100" height="30"/>
+                        <rect key="frame" x="140" y="156" width="100" height="30"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="100" id="a9Z-0X-ElP"/>
                             <constraint firstAttribute="height" constant="30" id="eOo-e1-Gin"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" tag="101" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qid-Qt-XZV">
+                        <rect key="frame" x="90" y="-0.5" width="200" height="200.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="XXq-Pq-cgW"/>
+                            <constraint firstAttribute="width" constant="200" id="mBw-Q3-cfW"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="ICW-Yt-bRi" firstAttribute="top" secondItem="7FX-6u-dqW" secondAttribute="topMargin" id="7Rh-1v-diq"/>

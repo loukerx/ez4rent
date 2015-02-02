@@ -63,10 +63,17 @@ static BOOL nibsRegistered = NO;
 //        // Do something with the returned PFObject in the gameScore variable.
 //        NSLog(@"%@", gameScore);
 //    }];
-//    
+//
+    
+    //    [query whereKey:@"playerName" equalTo:@"Dan Stemkoski"];
+    
+    
+    
+    
+    
         [_HUD show:YES];
     PFQuery *query = [PFQuery queryWithClassName:@"Room"];
-//    [query whereKey:@"playerName" equalTo:@"Dan Stemkoski"];
+
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded.
@@ -151,9 +158,21 @@ static BOOL nibsRegistered = NO;
     cell.nameLabel.text = object[@"name"];
     cell.priceLabel.text = object[@"roomPrice"];
     cell.suburbLabel.text = object[@"suburb"];
-    
-//    cell.imageView =
-
+    PFFile *roomPhotoFile = object[@"displayPhoto"];
+    cell.imageView.image = [UIImage imageWithData:[roomPhotoFile getData]];
+//    [roomPhotoFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+//        if (!error) {
+//               cell.imageView.image = [UIImage imageWithData:data];
+//        }else{
+//            UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
+//                                                                  message:[NSString stringWithFormat:@"%@ %@",error,[error userInfo]]
+//                                                                 delegate:nil
+//                                                        cancelButtonTitle:@"OK"
+//                                                        otherButtonTitles: nil];
+//            
+//            [myAlertView show];
+//        }
+//    }];
     return cell;
 }
 

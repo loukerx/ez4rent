@@ -9,10 +9,12 @@
 #import "PreviewTableViewController.h"
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import "MBProgressHUD.h"
 
 @interface PreviewTableViewController ()
 {
      id _mDelegate;
+     MBProgressHUD *_HUD;
 }
 
 
@@ -46,8 +48,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        _mDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    _mDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
+    _HUD =  [[MBProgressHUD alloc] init];
+    _HUD.labelText = @"Uploading your photos...";
+    [_HUD hide:YES];
+    [self.view addSubview:_HUD];
     
     //setting
     if ([[_mDelegate mRoomImages] count]>0) {
@@ -100,9 +106,18 @@
 
 -(void)saveIntoDatabase
 {
-    
-    
+    //keep photo size less than 150kb-200kb
+    NSData *imageData = UIImagePNGRepresentation(self.imageView.image);
+    NSData *bestImageData = UIImageJPEGRepresentation(self.imageView.image, 1.0);
+    NSData *leastImageData = UIImageJPEGRepresentation(self.imageView.image, 0.0);
+    PFFile *imageFile = [PFFile fileWithName:@"imageText.png" data:imageData];
+    PFFile *imageFileB = [PFFile fileWithName:@"imagebest.jpg" data:bestImageData];
+    PFFile *imageFileL = [PFFile fileWithName:@"imagelest.jpg" data:leastImageData];
+
+    [_HUD show:YES];
+    //create the Room
     PFObject *room = [PFObject objectWithClassName:@"Room"];
+    room[@"displayPhoto"] = imageFileL;
     room[@"name"] = [_mDelegate mName];
     room[@"mobile"] = [_mDelegate mMobile];
     room[@"rentType"] = [_mDelegate mRentType];
@@ -118,10 +133,38 @@
     room[@"roomPrice"] = [_mDelegate mRoomPrice];
     room[@"roomSummary"] = [_mDelegate mRoomSummary];
     
-    //subObject Room Images
-    
+    //create Room Photos
+    PFObject *roomPhoto = [PFObject objectWithClassName:@"RoomPhoto"];
+//    roomPhoto[@"imageNameBest"] = @"image001";
+//    roomPhoto[@"imageFileBest"] = imageFileB;
+    roomPhoto[@"imageNameLest"] = @"image002";
+    roomPhoto[@"imageFileLest"] = imageFileL;
 
-    [room saveInBackground];
+    
+    roomPhoto[@"parent"] = room;
+    [roomPhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        [_HUD hide:YES];
+        if (succeeded) {
+      
+            UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Succeess"
+                                                                  message:@"A room has been released!"
+                                                                 delegate:nil
+                                                        cancelButtonTitle:@"OK"
+                                                        otherButtonTitles: nil];
+            
+            [myAlertView show];
+            [self performSegueWithIdentifier:@"To Main" sender:self];
+        }else{
+            UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                  message:[NSString stringWithFormat:@"%@ %@",error,[error userInfo]]
+                                                                 delegate:nil
+                                                        cancelButtonTitle:@"OK"
+                                                        otherButtonTitles: nil];
+            
+            [myAlertView show];
+     
+        }
+    }];
     
     
     
@@ -136,7 +179,7 @@
 
 - (IBAction)releaseButton:(id)sender {
     [self saveIntoDatabase];
-    [self performSegueWithIdentifier:@"To Main" sender:self];
+
     
 }
 

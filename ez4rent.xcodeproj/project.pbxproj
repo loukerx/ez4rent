@@ -27,7 +27,6 @@
 		AEB16C911A79DA650060A2B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB16C901A79DA650060A2B6 /* CoreGraphics.framework */; };
 		AEB16C941A79DBC70060A2B6 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB16C931A79DBC70060A2B6 /* SearchViewController.m */; };
 		AEB622791A7870A60013E816 /* PhotosController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB622781A7870A60013E816 /* PhotosController.m */; };
-		AEB6227C1A78771B0013E816 /* InfoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB6227B1A78771B0013E816 /* InfoListTableViewController.m */; };
 		AEB79B6B1A7CA0CE001CB0F2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B6A1A7CA0CE001CB0F2 /* Parse.framework */; };
 		AEB79B6D1A7CA0FC001CB0F2 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B6C1A7CA0FC001CB0F2 /* Bolts.framework */; };
 		AEB79B6F1A7CA146001CB0F2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B6E1A7CA146001CB0F2 /* AudioToolbox.framework */; };
@@ -91,8 +90,6 @@
 		AEB16C931A79DBC70060A2B6 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		AEB622771A7870A60013E816 /* PhotosController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosController.h; sourceTree = "<group>"; };
 		AEB622781A7870A60013E816 /* PhotosController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosController.m; sourceTree = "<group>"; };
-		AEB6227A1A78771B0013E816 /* InfoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoListTableViewController.h; sourceTree = "<group>"; };
-		AEB6227B1A78771B0013E816 /* InfoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoListTableViewController.m; sourceTree = "<group>"; };
 		AEB79B6A1A7CA0CE001CB0F2 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ez4rent/Parse.framework; sourceTree = "<group>"; };
 		AEB79B6C1A7CA0FC001CB0F2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		AEB79B6E1A7CA146001CB0F2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -201,8 +198,6 @@
 		AE8A0B8A1A7B349D00C5E89E /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				AEB6227A1A78771B0013E816 /* InfoListTableViewController.h */,
-				AEB6227B1A78771B0013E816 /* InfoListTableViewController.m */,
 				AEB79B831A7CC98A001CB0F2 /* MainViewController.h */,
 				AEB79B841A7CC98A001CB0F2 /* MainViewController.m */,
 				AEB79B8D1A7CDD80001CB0F2 /* MainTableViewCell.h */,
@@ -441,7 +436,6 @@
 				AE8A0B8E1A7B36FD00C5E89E /* RentTypeTableViewController.m in Sources */,
 				AEB16C941A79DBC70060A2B6 /* SearchViewController.m in Sources */,
 				AEA3578A1A7662840078C84F /* main.m in Sources */,
-				AEB6227C1A78771B0013E816 /* InfoListTableViewController.m in Sources */,
 				AEB79B851A7CC98A001CB0F2 /* MainViewController.m in Sources */,
 				AEB622791A7870A60013E816 /* PhotosController.m in Sources */,
 				AEB79B881A7CCAD4001CB0F2 /* MBProgressHUD.m in Sources */,
@@ -569,6 +563,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ez4rent",
@@ -578,6 +573,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -587,6 +583,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ez4rent",
@@ -596,6 +593,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
