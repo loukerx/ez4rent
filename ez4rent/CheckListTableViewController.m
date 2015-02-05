@@ -15,7 +15,6 @@
 @interface CheckListTableViewController ()
 {
     id _mDelegate;
-
 }
 
 @property (weak, nonatomic) IBOutlet UIImageView *roomPhotos;

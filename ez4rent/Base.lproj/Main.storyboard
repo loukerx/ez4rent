@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pQa-gQ-htu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HHE-bQ-KTS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1151,7 +1151,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Preview" id="aGO-ui-tAX">
-                        <barButtonItem key="rightBarButtonItem" title="Release" id="PjY-q1-Ht7">
+                        <barButtonItem key="rightBarButtonItem" title="Finish" id="PjY-q1-Ht7">
                             <connections>
                                 <action selector="releaseButton:" destination="w6T-5G-yM7" id="1o4-cK-89V"/>
                             </connections>
@@ -1178,7 +1178,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYk-cj-gev" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4829" y="1883"/>
+            <point key="canvasLocation" x="4809" y="1883"/>
         </scene>
         <!--Check List-->
         <scene sceneID="2Pa-UM-Ewh">
@@ -1440,21 +1440,21 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kyy-uu-5bJ">
-                                <rect key="frame" x="200" y="64" width="200" height="200"/>
+                                <rect key="frame" x="200" y="20" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="1H0-Wh-kK5"/>
                                     <constraint firstAttribute="width" constant="200" id="2Aj-Pk-wS1"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CwB-le-sZt">
-                                <rect key="frame" x="0.0" y="264" width="80" height="80"/>
+                                <rect key="frame" x="0.0" y="220" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Xbk-pQ-glD"/>
                                     <constraint firstAttribute="width" constant="80" id="c4O-6z-2TS"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZbO-iD-0Rf">
-                                <rect key="frame" x="80" y="264" width="80" height="80"/>
+                                <rect key="frame" x="80" y="220" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="eHK-g2-sl5"/>
                                     <constraint firstAttribute="width" constant="80" id="sSg-11-ztI"/>
@@ -1497,6 +1497,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXN-yq-gEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6291" y="999"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="nOy-ed-tG2">
+            <objects>
+                <viewController id="HHE-bQ-KTS" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L6q-qg-lfS"/>
+                        <viewControllerLayoutGuide type="bottom" id="0ag-3x-no4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BHi-4K-0T8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="9ow-w9-MVL">
+                                <rect key="frame" x="280" y="533" width="39" height="37"/>
+                                <connections>
+                                    <action selector="changePage:" destination="HHE-bQ-KTS" eventType="valueChanged" id="1pf-Ji-X59"/>
+                                </connections>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2de-pg-5by">
+                                <rect key="frame" x="0.0" y="175" width="600" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="y1K-jr-EaL"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BHi-4K-0T8" id="qce-5W-8N9"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="9ow-w9-MVL" secondAttribute="centerX" id="DvJ-F2-V0n"/>
+                            <constraint firstAttribute="centerX" secondItem="2de-pg-5by" secondAttribute="centerX" id="Qw1-aJ-gXb"/>
+                            <constraint firstItem="0ag-3x-no4" firstAttribute="top" secondItem="9ow-w9-MVL" secondAttribute="bottom" constant="30" id="TjT-zB-FMR"/>
+                            <constraint firstAttribute="centerY" secondItem="2de-pg-5by" secondAttribute="centerY" id="Yp1-G3-ecJ"/>
+                            <constraint firstItem="2de-pg-5by" firstAttribute="leading" secondItem="BHi-4K-0T8" secondAttribute="leading" id="eqK-EK-hbI"/>
+                            <constraint firstAttribute="trailing" secondItem="2de-pg-5by" secondAttribute="trailing" id="kyi-jG-noC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="9ow-w9-MVL" id="X7m-UK-LNQ"/>
+                        <outlet property="scrollView" destination="2de-pg-5by" id="Swi-zy-rIq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FqM-H0-8Qa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7050" y="999"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qUy-WW-FIX">

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE4B6BA11A832895002E0CB9 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4B6BA01A832895002E0CB9 /* ImageViewController.m */; };
 		AE74BC861A7F08B800172513 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE74BC851A7F08B800172513 /* LoginViewController.m */; };
 		AE8A0B7E1A7B2C0200C5E89E /* CheckListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8A0B7D1A7B2C0200C5E89E /* CheckListTableViewController.m */; };
 		AE8A0B811A7B2D6500C5E89E /* SelectPriceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8A0B801A7B2D6500C5E89E /* SelectPriceViewController.m */; };
@@ -60,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE4B6B9F1A832895002E0CB9 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		AE4B6BA01A832895002E0CB9 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		AE74BC841A7F08B800172513 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		AE74BC851A7F08B800172513 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		AE8A0B7C1A7B2C0200C5E89E /* CheckListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListTableViewController.h; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 				AEBAE8AD1A7F4292000D7A62 /* RoomSettingViewController.m */,
 				AEBAE8AF1A7F4CDB000D7A62 /* UserInfoViewController.h */,
 				AEBAE8B01A7F4CDB000D7A62 /* UserInfoViewController.m */,
+				AE4B6B9F1A832895002E0CB9 /* ImageViewController.h */,
+				AE4B6BA01A832895002E0CB9 /* ImageViewController.m */,
 			);
 			name = PreCheckList;
 			sourceTree = "<group>";
@@ -456,6 +461,7 @@
 				AEB79B8F1A7CDD80001CB0F2 /* MainTableViewCell.m in Sources */,
 				AE74BC861A7F08B800172513 /* LoginViewController.m in Sources */,
 				AEB79B951A7CE603001CB0F2 /* RoomDetailsTableViewController.m in Sources */,
+				AE4B6BA11A832895002E0CB9 /* ImageViewController.m in Sources */,
 				AEBAE8B11A7F4CDB000D7A62 /* UserInfoViewController.m in Sources */,
 				AE8A0B7E1A7B2C0200C5E89E /* CheckListTableViewController.m in Sources */,
 				AEB8AF461A7A179C00668599 /* LocationViewController.m in Sources */,

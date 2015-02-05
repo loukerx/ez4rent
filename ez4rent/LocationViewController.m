@@ -101,7 +101,9 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
    
     if ([segue.identifier isEqualToString:@"To Bedroom Settings"]) {
+        
             [_mDelegate setMSuburb:self.searchText.text];
+        
     }
     
     
