@@ -160,6 +160,7 @@ static BOOL nibsRegistered = NO;
     cell.suburbLabel.text = object[@"suburb"];
     PFFile *roomPhotoFile = object[@"displayPhoto"];
     cell.imageView.image = [UIImage imageWithData:[roomPhotoFile getData]];
+    cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
 //    [roomPhotoFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
 //        if (!error) {
 //               cell.imageView.image = [UIImage imageWithData:data];

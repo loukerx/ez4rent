@@ -18,6 +18,8 @@
 @property (strong, nonatomic) IBOutlet UIImageView *image2;
 @property (strong, nonatomic) IBOutlet UIImageView *image3;
 
+@property (weak, nonatomic) IBOutlet UIView *testview;
+
 
 @end
 
@@ -31,7 +33,21 @@
     
     _mDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     imagesArray = [[NSMutableArray alloc]init];
+    
+    
+    [imagesArray addObjectsFromArray:[[_mDelegate mRoomImages] count]? [_mDelegate mRoomImages]:nil];
+    
+    UITapGestureRecognizer *singleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTapGesture:)];
+
+    [self.image1 addGestureRecognizer:singleTapGestureRecognizer];
 }
+#pragma gesture
+-(void)handleSingleTapGesture:(UITapGestureRecognizer *)tapGestureRecognizer{
+    [[_mDelegate mRoomImages] removeAllObjects];
+    [[_mDelegate mRoomImages] addObjectsFromArray:imagesArray];
+    [self performSegueWithIdentifier:@"To Image View" sender:self];
+}
+
 
 -(void)viewWillAppear:(BOOL)animated{
     if ([[_mDelegate mRoomImages] count]>0) {
@@ -40,6 +56,14 @@
     if ([imagesArray count]>0) {
         self.image1.image = imagesArray[0];
     }
+}
+
+#pragma button
+- (IBAction)saveButton:(id)sender {
+    [[_mDelegate mRoomImages] removeAllObjects];
+    [[_mDelegate mRoomImages] addObjectsFromArray:imagesArray];
+    [self.navigationController popViewControllerAnimated:YES];
+    
 }
 
 - (IBAction)takePhotoAction:(id)sender {
@@ -54,15 +78,9 @@
     [actionSheet showInView:self.view];
 }
 
-- (IBAction)saveButton:(id)sender {
-    [[_mDelegate mRoomImages] addObjectsFromArray:imagesArray];
-    [self.navigationController popViewControllerAnimated:YES];
-    
-}
+
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
-//    NSLog(@"the %@ button was tapped.", [actionSheet buttonTitleAtIndex:buttonIndex]);
-    
     switch (buttonIndex) {
         case 0:
             [self takePhoto];
@@ -110,7 +128,7 @@
 
 }
 
-
+#pragma save images in array
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
    
     UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
@@ -128,6 +146,8 @@
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -29,7 +29,6 @@
 		AEB16C911A79DA650060A2B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB16C901A79DA650060A2B6 /* CoreGraphics.framework */; };
 		AEB16C941A79DBC70060A2B6 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB16C931A79DBC70060A2B6 /* SearchViewController.m */; };
 		AEB622791A7870A60013E816 /* PhotosController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB622781A7870A60013E816 /* PhotosController.m */; };
-		AEB79B6B1A7CA0CE001CB0F2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B6A1A7CA0CE001CB0F2 /* Parse.framework */; };
 		AEB79B6D1A7CA0FC001CB0F2 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B6C1A7CA0FC001CB0F2 /* Bolts.framework */; };
 		AEB79B6F1A7CA146001CB0F2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B6E1A7CA146001CB0F2 /* AudioToolbox.framework */; };
 		AEB79B711A7CA14D001CB0F2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB79B701A7CA14D001CB0F2 /* CFNetwork.framework */; };
@@ -48,6 +47,7 @@
 		AEB8AF461A7A179C00668599 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB8AF451A7A179C00668599 /* LocationViewController.m */; };
 		AEBAE8AE1A7F4292000D7A62 /* RoomSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBAE8AD1A7F4292000D7A62 /* RoomSettingViewController.m */; };
 		AEBAE8B11A7F4CDB000D7A62 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBAE8B01A7F4CDB000D7A62 /* UserInfoViewController.m */; };
+		AECD201F1A9C522700B49D76 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECD201E1A9C522700B49D76 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +98,6 @@
 		AEB16C931A79DBC70060A2B6 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		AEB622771A7870A60013E816 /* PhotosController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosController.h; sourceTree = "<group>"; };
 		AEB622781A7870A60013E816 /* PhotosController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosController.m; sourceTree = "<group>"; };
-		AEB79B6A1A7CA0CE001CB0F2 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ez4rent/Parse.framework; sourceTree = "<group>"; };
 		AEB79B6C1A7CA0FC001CB0F2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		AEB79B6E1A7CA146001CB0F2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		AEB79B701A7CA14D001CB0F2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -124,6 +123,7 @@
 		AEBAE8AD1A7F4292000D7A62 /* RoomSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomSettingViewController.m; sourceTree = "<group>"; };
 		AEBAE8AF1A7F4CDB000D7A62 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
 		AEBAE8B01A7F4CDB000D7A62 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		AECD201E1A9C522700B49D76 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +137,7 @@
 				AEB79B791A7CA193001CB0F2 /* StoreKit.framework in Frameworks */,
 				AEB79B771A7CA18B001CB0F2 /* Security.framework in Frameworks */,
 				AEB79B751A7CA175001CB0F2 /* QuartzCore.framework in Frameworks */,
+				AECD201F1A9C522700B49D76 /* Parse.framework in Frameworks */,
 				AEB79B731A7CA16D001CB0F2 /* MobileCoreServices.framework in Frameworks */,
 				AEB16C911A79DA650060A2B6 /* CoreGraphics.framework in Frameworks */,
 				AEB79B711A7CA14D001CB0F2 /* CFNetwork.framework in Frameworks */,
@@ -144,7 +145,6 @@
 				AEB16C8F1A79DA5A0060A2B6 /* Foundation.framework in Frameworks */,
 				AEB16C8D1A79DA4B0060A2B6 /* UIKit.framework in Frameworks */,
 				AEB16C8A1A79DA140060A2B6 /* CoreLocation.framework in Frameworks */,
-				AEB79B6B1A7CA0CE001CB0F2 /* Parse.framework in Frameworks */,
 				AEB16C881A79DA080060A2B6 /* MapKit.framework in Frameworks */,
 				AEB79B6D1A7CA0FC001CB0F2 /* Bolts.framework in Frameworks */,
 			);
@@ -181,6 +181,8 @@
 		AE8A0B871A7B346000C5E89E /* SubCheckList */ = {
 			isa = PBXGroup;
 			children = (
+				AE4B6B9F1A832895002E0CB9 /* ImageViewController.h */,
+				AE4B6BA01A832895002E0CB9 /* ImageViewController.m */,
 				AEB622771A7870A60013E816 /* PhotosController.h */,
 				AEB622781A7870A60013E816 /* PhotosController.m */,
 				AE8A0B7F1A7B2D6500C5E89E /* SelectPriceViewController.h */,
@@ -205,8 +207,6 @@
 				AEBAE8AD1A7F4292000D7A62 /* RoomSettingViewController.m */,
 				AEBAE8AF1A7F4CDB000D7A62 /* UserInfoViewController.h */,
 				AEBAE8B01A7F4CDB000D7A62 /* UserInfoViewController.m */,
-				AE4B6B9F1A832895002E0CB9 /* ImageViewController.h */,
-				AE4B6BA01A832895002E0CB9 /* ImageViewController.m */,
 			);
 			name = PreCheckList;
 			sourceTree = "<group>";
@@ -308,6 +308,7 @@
 		AEB16C8B1A79DA270060A2B6 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				AECD201E1A9C522700B49D76 /* Parse.framework */,
 				AEB79B7E1A7CA1AD001CB0F2 /* libsqlite3.dylib */,
 				AEB79B7C1A7CA1A5001CB0F2 /* libz.dylib */,
 				AEB79B7A1A7CA19D001CB0F2 /* SystemConfiguration.framework */,
@@ -318,7 +319,6 @@
 				AEB79B701A7CA14D001CB0F2 /* CFNetwork.framework */,
 				AEB79B6E1A7CA146001CB0F2 /* AudioToolbox.framework */,
 				AEB79B6C1A7CA0FC001CB0F2 /* Bolts.framework */,
-				AEB79B6A1A7CA0CE001CB0F2 /* Parse.framework */,
 				AEB16C901A79DA650060A2B6 /* CoreGraphics.framework */,
 				AEB16C8E1A79DA5A0060A2B6 /* Foundation.framework */,
 				AEB16C8C1A79DA4B0060A2B6 /* UIKit.framework */,

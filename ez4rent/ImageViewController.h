@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ImageViewController : UIViewController
-- (IBAction)changePage:(id)sender;
+
 
 @end
