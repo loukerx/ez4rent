@@ -1,5 +1,6 @@
 # ez4rent
-a demo for rent a room
+
+a property rent and release demo
 
 Practice Parse API
 
